@@ -30,14 +30,14 @@
 
 //-----System Switches (uncomment the define to activate the system)----//
 // Turn on/off the entire Vision-processing system
-#ifndef USE_VISION
-#  define USE_VISION
-#endif
+//#ifndef USE_VISION
+//#  define USE_VISION
+//#endif
 // it's baaack. due to battery life, here's an easy ifdef to enable/disable
 // Python
-#ifndef USE_PYTHON
-#  define USE_PYTHON 
-#endif
+//#ifndef USE_PYTHON
+//#  define USE_PYTHON 
+//#endif
 // Use pink objects as balls
 #ifndef USE_PINK_BALL
 //#  define USE_PINK_BALL
@@ -50,7 +50,6 @@
 #ifndef USE_TOOL_CONNECT
 //#  define USE_TOOL_CONNECT
 #endif
-
 
 // Switches for debugging purposes
 

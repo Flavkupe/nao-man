@@ -80,7 +80,9 @@ Man::Man ()
     comm(synchro, &sensors, &vision),
     //BREAKS NAOQI1.0
 #ifndef NAOQI1
+#ifdef USE_NOGGIN
     noggin(&sensors, &profiler, &vision),
+#endif
 #endif
     frame_counter(0), saved_frames(0), hack_frames(0),
     camera_active(false)
@@ -513,7 +515,7 @@ Man::run ()
 
   // Finished with run loop, stop sub-threads and exit
   motion.stop();
-  motion.getTrigger()->await_off();
+  //motion.getTrigger()->await_off();
   comm.stop();
   comm.getTrigger()->await_off();
   // @jfishman - tool will not exit, due to socket blocking
@@ -699,6 +701,7 @@ Man::processFrame ()
     printf("No ball in this frame\n");
 #endif
 
+#ifdef USE_NOGGIN
   // run Python behaviors
   //BREAKS NAOQI1.0
 #ifndef NAOQI1
