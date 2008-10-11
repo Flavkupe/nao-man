@@ -23,3 +23,15 @@ Motion::Motion (ALMotionProxy * _proxy,shared_ptr<Synchro> _synchro, Sensors *s)
   c_init_motion();
 #endif
 }
+
+Motion::~Motion() {
+    delete enactor;
+}
+
+int Motion::start() {
+    return 0;
+}
+
+void Motion::stop() {
+
+}
