@@ -29,9 +29,12 @@ Motion::~Motion() {
 }
 
 int Motion::start() {
+    // Start the enactor thread
+    enactor->start();
+
     return 0;
 }
 
 void Motion::stop() {
-
+    enactor->stop();
 }
