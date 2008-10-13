@@ -111,6 +111,7 @@ SET( MOTION_SRCS ${MOTION_INCLUDE_DIR}/ActionCommand
 		     ${MOTION_INCLUDE_DIR}/MotionEnactor
 		     ${MOTION_INCLUDE_DIR}/SimulatorEnactor
 		     ${MOTION_INCLUDE_DIR}/WalkProvider
+		     ${MOTION_INCLUDE_DIR}/WalkingLeg
                      ${MOTION_INCLUDE_DIR}/_motionmodule
                      )
 
