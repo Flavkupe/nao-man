@@ -31,6 +31,7 @@ Motion::~Motion() {
 int Motion::start() {
     // Start the enactor thread
     enactor->start();
+    switchboard.start();
 
     return 0;
 }
