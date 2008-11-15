@@ -113,6 +113,7 @@ SET( MOTION_SRCS ${MOTION_INCLUDE_DIR}/ActionCommand
 		     ${MOTION_INCLUDE_DIR}/WalkProvider
 		     ${MOTION_INCLUDE_DIR}/WalkingLeg
                      ${MOTION_INCLUDE_DIR}/DummyController
+		     ${MOTION_INCLUDE_DIR}/PreviewController
                      ${CORPUS_INCLUDE_DIR}/Kinematics
 		     ${MOTION_INCLUDE_DIR}/_motionmodule
                      )
