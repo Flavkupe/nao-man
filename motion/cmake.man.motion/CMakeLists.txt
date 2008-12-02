@@ -105,9 +105,10 @@ SET( MOTION_SRCS ${MOTION_INCLUDE_DIR}/ActionCommand
 		     ${MOTION_INCLUDE_DIR}/WalkParameters
                      ${MOTION_INCLUDE_DIR}/MotionConstants
                      ${MOTION_INCLUDE_DIR}/Motion.cpp
-                     #${MOTION_INCLUDE_DIR}/MotionCore
-                     #${MOTION_INCLUDE_DIR}/MotionInterface
+                     ${MOTION_INCLUDE_DIR}/MotionCore
+                     ${MOTION_INCLUDE_DIR}/MotionInterface
 		     ${MOTION_INCLUDE_DIR}/MotionSwitchboard
+		     ${MOTION_INCLUDE_DIR}/ChopShop
 		     ${MOTION_INCLUDE_DIR}/MotionEnactor
 		     ${MOTION_INCLUDE_DIR}/SimulatorEnactor
 		     ${MOTION_INCLUDE_DIR}/WalkProvider
@@ -116,7 +117,7 @@ SET( MOTION_SRCS ${MOTION_INCLUDE_DIR}/ActionCommand
 		     ${MOTION_INCLUDE_DIR}/PreviewController
 		     ${MOTION_INCLUDE_DIR}/StepGenerator
                      ${CORPUS_INCLUDE_DIR}/Kinematics
-                     #${MOTION_INCLUDE_DIR}/_motionmodule
+                     ${MOTION_INCLUDE_DIR}/_motionmodule
                      ${MOTION_INCLUDE_DIR}/ChainQueue
                      )
 
