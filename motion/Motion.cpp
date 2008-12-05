@@ -34,7 +34,7 @@ int Motion::start() {
     switchboard.start();
 
     return Thread::start();
-}
+x}
 
 void Motion::stop() {
     switchboard.stop();
