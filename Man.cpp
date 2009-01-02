@@ -517,7 +517,7 @@ Man::run ()
 
   // Finished with run loop, stop sub-threads and exit
   motion.stop();
-  //motion.getTrigger()->await_off();
+  motion.getTrigger()->await_off();
   comm.stop();
   comm.getTrigger()->await_off();
   // @jfishman - tool will not exit, due to socket blocking
