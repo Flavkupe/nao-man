@@ -172,11 +172,11 @@ INCLUDE_DIRECTORIES( ${NBCOMMON_INCLUDE_DIR}
 # Add here source files needed to compile this project
 SET( MAN_SRCS ${MAN_INCLUDE_DIR}/Man
               ${MAN_INCLUDE_DIR}/manmodule
-              ${MAN_INCLUDE_DIR}/NaoPose
-              ${MAN_INCLUDE_DIR}/Noggin
-              ${MAN_INCLUDE_DIR}/PyVision
-	      ${MAN_INCLUDE_DIR}/Sensors
-              ${MAN_INCLUDE_DIR}/_ledsmodule
+              ${MAN_INCLUDE_DIR}/corpus/NaoPose
+              ${MAN_INCLUDE_DIR}/noggin/Noggin
+              ${MAN_INCLUDE_DIR}/vision/PyVision
+              ${MAN_INCLUDE_DIR}/corpus/Sensors
+              ${MAN_INCLUDE_DIR}/corpus/_ledsmodule
               )
 
 SET( MAN_PYTHON_SRCS ${MAN_INCLUDE_DIR}/__init__.py )

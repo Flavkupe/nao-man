@@ -1,6 +1,7 @@
 
 
 #include <boost/shared_ptr.hpp>
+using namespace boost;
 
 #include "synchro.h"
 #include "Motion.h"
@@ -19,7 +20,7 @@ Motion::Motion (ALMotionProxy * _proxy,shared_ptr<Synchro> _synchro, Sensors *s)
 {
   //Breaks NaoQi1.0
 #ifndef NAOQI1
-  set_motion_interface(this);
+  set_motion_interface(&interface);
   c_init_motion();
 #endif
 }

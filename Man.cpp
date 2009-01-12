@@ -710,6 +710,7 @@ Man::processFrame ()
 #ifndef NAOQI1
   noggin.runStep();
 #endif
+#endif
 
   PROF_EXIT(&profiler, P_FINAL);
   PROF_NFRAME(&profiler);

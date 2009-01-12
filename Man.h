@@ -152,7 +152,6 @@ class Man
 #endif
     Vision vision;
     Comm comm;
-<<<<<<< HEAD:Man.h
     //Breaks Naoqi1.0
 #ifndef NAOQI1
 #ifdef USE_NOGGIN
